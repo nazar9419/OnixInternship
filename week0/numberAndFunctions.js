@@ -80,5 +80,15 @@ console.log('5: ', getNaturalNumber(10, 22, -23, 5.4));
  * (-12, 2, -6)  ->  true
  * (-12, 2, -5)  ->  false
  */
+function isDivideBy(number, firstDivider, secondDivider){
+    if((number%firstDivider==0)&&(number%secondDivider==0))
+    {
+        var a = number.toString() + ", " + firstDivider.toString() + ", " + secondDivider.toString() + " -> true";  
+        return a;
+    }
+    var b = number.toString() + ", " + firstDivider.toString() + ", " + secondDivider.toString() + " -> false";
+    return b;
+}
 
-//console.log('6: ', isDivideBy(*, *, *));
+
+console.log('6: ', isDivideBy(45, 5, 14));

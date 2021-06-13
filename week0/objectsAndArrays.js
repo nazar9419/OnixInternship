@@ -90,5 +90,11 @@ console.log('8: ', sort([11, 21, 13, 88, 2, 4, 77]));
  *     odd: [11, 21, 13, 77]
  * }
  *  */ 
+function objectFromArray(array){
+    const entries = new Map ([array]);
+    const obj3 = Object.fromEntries(entries);
+    return obj3;   
+}
 
-//console.log('9: ',  yourFuncName(***));
+
+console.log('9: ',  objectFromArray(sort([11, 21, 13, 88, 2, 4, 77])));
